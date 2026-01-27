@@ -32,10 +32,16 @@ h2 {
 }
 
 nav,
-p,
-section,
-article {
+p {
     margin: 16px;
+    padding: 8px;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+article {
     padding: 8px;
 }
 
@@ -51,6 +57,8 @@ article {
 
 .hero {
     position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 200px;
 }
 
 .hero img {
@@ -72,8 +80,8 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    opacity: 0.9;
+    background-color: rgba(46, 98, 161, 0.85);
     color: #fff;
 
 }
@@ -91,14 +99,12 @@ article {
 }
 
 h2 {
-    position: relative;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+    font-family: var(--heading-font);
     text-align: center;
-    opacity: 0.7;
+    padding: 16px;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
+    margin: 0;
 }
 
 main {
