@@ -66,7 +66,7 @@ article {
 }
 
 .hero article img {
-    float: none;
+    float: right;
     width: 95px;
     margin-left: 1rem;
     height: auto;
@@ -82,7 +82,6 @@ article {
     opacity: 0.9;
     background-color: var(--accent1-color);
     color: #fff;
-    padding: 1rem;
 }
 
 .hero article {
@@ -90,8 +89,6 @@ article {
     bottom: 6rem;
     left: 2rem;
     right: 2rem;
-    display: flex;
-    align-items: center;
     padding: 1rem;
     border: 2px solid var(--accent2-color);
     background-color: var(--secondary-color);
@@ -99,6 +96,7 @@ article {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    float: right;
 }
 
 h2 {
