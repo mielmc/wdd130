@@ -175,13 +175,18 @@ footer {
     align-items: center;
 }
 
-.contact-info {
+.contact-info h1 {
     text-align: center;
-    padding: 2rem 0;
+    padding: 16px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    margin: 0;
+    opacity: 0.9;
 }
 
 .contact-info p {
     margin: 0.3rem 0;
+    text-align: center;
 }
 
 .contact-grid {
