@@ -143,6 +143,11 @@ header nav a {
 
 }
 
+header nav a:hover {
+    background-color: lightblue;
+    transform: translateY(-3px);
+}
+
 header {
 
     background-color: var(--secondary-color);
@@ -278,6 +283,24 @@ legend {
     padding: 3rem 2rem 2rem;
 }
 
+.intro-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+}
+
+.intro-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
 .trip-intro h1 {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
@@ -299,7 +322,7 @@ legend {
     border: 1px solid var(--accent1-color);
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.2 ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .trip-card:hover {
@@ -355,4 +378,97 @@ td {
 
 .trip-section:nth-child(even) {
     background-color: #ffffff;
+}
+
+.home-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.grid_item h3 {
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.newsletter {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+.newsletter form {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border: 1 px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.newsletter button {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-color);
+}
+
+@keyframes fadeUp {
+    form {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
 }
