@@ -416,7 +416,7 @@ td {
     margin-bottom: 1rem;
 }
 
-.grid_item h3 {
+.grid-item h3 {
     margin-bottom: 0.5rem;
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -437,7 +437,7 @@ td {
 
 .newsletter input {
     padding: 0.5rem;
-    border: 1 px solid var(--accent1-color);
+    border: 1px solid var(--accent1-color);
     border-radius: 4px;
     font-family: var(--body-font);
 }
@@ -456,8 +456,18 @@ td {
     background-color: var(--primary-color);
 }
 
+.hero-message {
+    position: absolute;
+    bottom: 6rem;
+    left: 2rem;
+    right: 1rem;
+    border: 2px solid var(--accent2-color);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color)
+}
+
 @keyframes fadeUp {
-    form {
+    from {
         opacity: 0;
         transform: translateY(15px);
     }
